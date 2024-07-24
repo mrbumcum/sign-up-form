@@ -12,22 +12,22 @@
     
     <form action="/sign-up-info" method="post">
         <label for="first-name">First Name *</label>
-        <input type="text" name="first-name" id="first-name" autocomplete="given-name" required>
+        <input type="text" name="first-name" id="first-name" autocomplete="given-name" placeholder="John" required>
 
         <label for="last-name">Last Name *</label>
-        <input type="text" name="last-name" id="last-name" autocomplete="family-name" required>
+        <input type="text" name="last-name" id="last-name" autocomplete="family-name" placeholder="Doe" required>
 
         <label for="email">Email *</label>
-        <input type="email" name="email" id="email" autocomplete="email" required>
+        <input type="email" name="email" id="email" autocomplete="email" placeholder="johndoe@web.com" required>
 
         <label for="tel">Phone Number</label>
-        <input type="tel" name="tel" id="tel" autocomplete="tel-country-code">
+        <input type="tel" name="tel" id="tel" placeholder="+43102-555-7654" autocomplete="tel-country-code">
 
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" autocomplete="new-password" minlength="8" required>
+        <input type="password" name="password" id="password" autocomplete="new-password" minlength="8" placeholder="Please enter a password" required>
 
         <label for="confirm-password">Confirm Password</label>
-        <input type="password" name="confirm-password" id="confirm-password" minlength="8" required>
+        <input type="password" name="confirm-password" id="confirm-password" minlength="8" placeholder="Please confirm your password" required>
 
         <div>
             <input type="checkbox" name="newsletter-checkbox" id="newsletter-checkbox" value="Y">
