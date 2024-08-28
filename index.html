@@ -7,36 +7,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
-        Sign up now to get started.</p>
-    
-    <form action="/sign-up-info" method="post">
-        <label for="first-name">First Name *</label>
-        <input type="text" name="first-name" id="first-name" autocomplete="given-name" placeholder="John" required>
+    <div class="content-area1"></div>
 
-        <label for="last-name">Last Name *</label>
-        <input type="text" name="last-name" id="last-name" autocomplete="family-name" placeholder="Doe" required>
+    <div class="content-area2">
+        <p>"</p>
+        <p>Let's make it happen together</p>
+    </div>
 
-        <label for="email">Email *</label>
-        <input type="email" name="email" id="email" autocomplete="email" placeholder="johndoe@web.com" required>
+    <div class="content-area3">
+        <p>Already have an account? <span>Sign in here</span></p>
+        <p>Create An Account</p>
 
-        <label for="tel">Phone Number</label>
-        <input type="tel" name="tel" id="tel" placeholder="+43102-555-7654" autocomplete="tel-country-code">
+        <form action="/sign-up-info" method="post">
+            <label for="first-name">First Name *</label>
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" placeholder="John" required>
 
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" autocomplete="new-password" minlength="8" placeholder="Please enter a password" required>
+            <label for="last-name">Last Name *</label>
+            <input type="text" name="last-name" id="last-name" autocomplete="family-name" placeholder="Doe" required>
 
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" name="confirm-password" id="confirm-password" minlength="8" placeholder="Please confirm your password" required>
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="johndoe@web.com" required>
 
-        <div>
-            <input type="checkbox" name="newsletter-checkbox" id="newsletter-checkbox" value="Y">
-            <label for="newsletter-checkbox">Get emails from Company™ about product updates, offers and industry news. You can <a href="#">Unsubscribe</a> at any time.</label>
-        </div>
+            <label for="tel">Phone Number</label>
+            <input type="tel" name="tel" id="tel" placeholder="+43102-555-7654" autocomplete="tel-country-code">
 
-        <button type="submit">Create Account</button>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" autocomplete="new-password" minlength="8" placeholder="Please enter a password" required>
 
-        <p>Already have an account? <a href="#">Sign in</a></p>
-    </form>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password" minlength="8" placeholder="Please confirm your password" required>
+
+            <div>
+                <input type="checkbox" name="newsletter-checkbox" id="newsletter-checkbox" value="Y">
+                <label for="newsletter-checkbox">Get emails from Company™ about product updates, offers and industry news. You can <a href="#">Unsubscribe</a> at any time.</label>
+            </div>
+
+            <button type="submit">Create Account</button>
+
+            <p>Already have an account? <a href="#">Sign in</a></p>
+        </form>
+    </div>
 </body>
 </html>
