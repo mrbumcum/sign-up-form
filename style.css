@@ -9,7 +9,10 @@
 }
 
 body {
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
     line-height: 1.5;
+    background-color: hsl(233, 37%, 31%);
+    height: 100vh; 
 }
 
 img, picture, video, canvas, svg {
@@ -18,5 +21,54 @@ img, picture, video, canvas, svg {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-overflow-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.content-area1, .content-area2, .content-area3 {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.content-area1 {
+    flex: 1;
+    background-color: hsl(43, 95%, 53%);
+    max-width: 1%;
+    height: 100%;
+}
+
+.content-area2 {
+    flex: 2;
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.content-area3 {
+    flex: 3;
+    background-color: hsl(43, 95%, 53%);
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    background-color: hsl(233, 37%, 31%);
+}
+
+form button:hover {
+    background-color: hsl(233, 37%, 25%);
 }
