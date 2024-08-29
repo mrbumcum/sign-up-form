@@ -55,7 +55,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .content-area2 {
-    flex: 2;
+    flex: 1;
     font-size: 5rem;
     font-weight: bold;
     color: white;
@@ -63,16 +63,39 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .content-area3 {
-    flex: 3;
+    flex: 1;
     background: var(--primary-theme);
     background: var(--primary-theme-gradient);
     margin: 20px;
+    padding: 50px;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    font-size: 0.8rem;
+    font-weight: 800;
 }
+
+.form-columns input {
+    width: 15rem;
+    height: 2.5rem;
+}
+
+.form-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 
 form button {
     background-color: var(--secondary-theme);
@@ -80,4 +103,8 @@ form button {
 
 form button:hover {
     background-color: hsl(233, 37%, 25%);
+}
+
+.bottom-burb {
+    width: 100%;
 }
