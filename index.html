@@ -13,13 +13,14 @@
             <img src="./img/cartoon-logo.png" alt="Cartoon workers ready to serve">
         </div>
         <div class="content-area3">
-            
-
-            <div class="top-blurb">
-                <p>Already have an account? <span>Sign in here</span></p>
-                <p>Create An Account</p>
+            <div class="header">
+                <p>Already have an account? <a href="">Sign in here!</a></p>
             </div>
 
+            
+            <div class="top-blurb">
+                <h1>Create An Account</h1>
+            </div>
 
             <form action="/sign-up-info" method="post">
                 <div class="form-columns">
@@ -42,10 +43,19 @@
                 </div>
 
                 <div class="bottom-burb">
-                    <input type="checkbox" name="newsletter-checkbox" id="newsletter-checkbox" value="Y">
-                    <label for="newsletter-checkbox">Get emails from Company™ about product updates, offers and industry news. You can <a href="#">Unsubscribe</a> at any time.</label>
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="#">Sign in</a></p>
+                    <div>
+                        <input type="checkbox" name="newsletter-checkbox" id="newsletter-checkbox" value="Y">
+                        <label for="newsletter-checkbox">Creating your account and you accepting Terms & Conditions.</label>
+                    </div>
+                    <div class="form-columns">
+                        <div class="left-column">
+                            <button type="submit">Create Account</button>
+                            <button type="button">Sign up using Facebook?</button>
+                        </div>
+                        <div class="right-column">
+                            <button type="button">Sign up using Twitter?</button>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>

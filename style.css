@@ -19,6 +19,7 @@ body {
     line-height: 1.5;
     background-color: var(--secondary-theme);
     height: 100vh; 
+    color: var(--secondary-theme)
 }
 
 img, picture, video, canvas, svg {
@@ -28,6 +29,10 @@ img, picture, video, canvas, svg {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 .container {
@@ -43,7 +48,6 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     flex-direction: column;
 }
-
 
 .content-area1 {
     flex: 1;
@@ -63,22 +67,41 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .content-area3 {
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
     flex: 1;
     background: var(--primary-theme);
     background: var(--primary-theme-gradient);
     margin: 20px;
     padding: 50px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     font-size: 0.8rem;
     font-weight: 800;
 }
 
-.form-columns input {
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+
+
+.top-blurb {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-columns input, form button {
     width: 15rem;
     height: 2.5rem;
 }
@@ -96,6 +119,10 @@ form {
     gap: 0.5rem;
 }
 
+label + input {
+    margin-bottom: 10px;
+}
+
 
 form button {
     background-color: var(--secondary-theme);
@@ -106,5 +133,15 @@ form button:hover {
 }
 
 .bottom-burb {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bottom-burb > * {
+    margin-bottom: 30px;
+}
+
+.bottom-burb .form-columns .left-column {
+    gap: 20px;
 }
