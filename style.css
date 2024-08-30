@@ -73,7 +73,6 @@ h1 {
 .content-area3 {
     justify-content: flex-start;
     align-items: center;
-    height: 100%;
     flex: 1;
     background: var(--primary-theme);
     background: var(--primary-theme-gradient);
@@ -116,7 +115,7 @@ form {
     gap: 20px;
 }
 
-.left-column, .right-column, .right-column2{
+.left-column, .right-column{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -147,8 +146,4 @@ form button:hover {
 
 .bottom-burb .form-columns .left-column {
     gap: 20px;
-}
-
-.right-column2 {
-    justify-content: flex-start;
-}
+}   
